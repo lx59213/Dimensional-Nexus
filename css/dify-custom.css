@@ -1,0 +1,82 @@
+/* Dify 界面自定义样式 */
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #4a148c;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+}
+
+/* 隐藏工作流状态显示 */
+.completion-indicator,
+.status-indicator {
+    display: none !important;
+}
+
+/* 美化上传按钮 */
+.upload-button,
+button[type="button"] {
+    background-color: var(--primary-color) !important;
+    border: none !important;
+    border-radius: 4px !important;
+    color: white !important;
+    padding: 8px 16px !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.upload-button:hover,
+button[type="button"]:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+/* 美化输入框 */
+input[type="text"],
+textarea {
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+    width: 100% !important;
+    margin: 8px 0 !important;
+}
+
+/* 对话框样式 */
+.chat-message {
+    background-color: white !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    margin: 8px 0 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* 隐藏不必要的元素 */
+.workflow-status,
+.execution-details {
+    display: none !important;
+}
+
+/* 美化文件上传区域 */
+.file-upload-area {
+    border: 2px dashed #ddd !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    text-align: center !important;
+    margin: 16px 0 !important;
+    background-color: #fafafa !important;
+}
+
+/* 统一字体和颜色 */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    color: var(--text-color) !important;
+}
+
+/* 美化标题 */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color) !important;
+    margin: 16px 0 !important;
+}
+
+/* 隐藏 Dify logo 和品牌相关元素 */
+.dify-logo,
+.powered-by {
+    display: none !important;
+}

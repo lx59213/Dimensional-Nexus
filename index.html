@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>位面演算 - 智能跑团体验</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* iframe 容器样式 */
+        .tool-content iframe {
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        /* 使用 CSS 变量方便统一管理主题色 */
+        :root {
+            --dify-primary-color: #1a237e;
+            --dify-secondary-color: #4a148c;
+            --dify-background: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <div class="logo-section">
+                <h1>位面演算</h1>
+                <div class="subtitle">Dimensional Nexus</div>
+                <p class="subtitle-cn">超越边界的智能跑团体验</p>
+                <p class="subtitle-en">Beyond Boundaries: AI-Driven Adventure Realms</p>
+            </div>
+            <nav class="steps-nav">
+                <div class="step-item" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-label">角色创建</div>
+                </div>
+                <div class="step-item" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-label">审卡</div>
+                </div>
+                <div class="step-item" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-label">初步备团</div>
+                </div>
+                <div class="step-item" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-label">主流程</div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- 主要内容区域 -->
+        <div class="main-content">
+            <div class="tool-container">
+                <div class="tool-header">
+                    <h2>欢迎使用位面演算</h2>
+                    <p class="tool-description">请从左侧选择要使用的功能</p>
+                </div>
+                <div class="tool-content" id="toolContent">
+                    <!-- 工具内容将通过JavaScript动态加载 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
