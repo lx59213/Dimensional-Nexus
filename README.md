@@ -38,7 +38,7 @@ Dimensional Nexus 是一个创新的智能跑团助手，它能够帮助玩家�
 ## 功能展示
 
 ### 1. 角色创建
-![角色创建界面](screenshot/初始角色创建.png)
+![角色创建界面](screenshot/初始图角色创建.png)
 - 在角色创建页面，你可以：
   - 上传或编写角色设定
   - 使用 markdown 格式编写角色卡
@@ -67,7 +67,7 @@ Dimensional Nexus 是一个创新的智能跑团助手，它能够帮助玩家�
 
 ## 移动端支持
 
-![移动端界面](screenshot/手机端.jpg)
+<img src="screenshot/手机端.jpg" width="300" alt="移动端界面">
 
 虽然我们对移动端进行了适配，但为了获得最佳体验，建议：
 - 优先使用PC端访问
