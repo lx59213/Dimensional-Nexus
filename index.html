@@ -11,11 +11,21 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/dify-custom.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="js/decrypted-text.js"></script>
     <style>
         /* iframe 容器样式 */
         .tool-content iframe {
             background-color: white;
             border-radius: 8px;
+        }
+        /* 解密文字效果样式 */
+        .decrypt-text {
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        .decrypt-text:hover {
+            color: #4a90e2;
         }
     </style>
 </head>
@@ -24,10 +34,10 @@
         <!-- 侧边栏 -->
         <div class="sidebar">
             <div class="logo-section">
-                <h1>位面演算</h1>
-                <div class="subtitle">Dimensional Nexus</div>
-                <p class="subtitle-cn">超越边界的智能跑团体验</p>
-                <p class="subtitle-en">Beyond Boundaries: AI-Driven Adventure Realms</p>
+                <h1 class="decrypt-text">位面演算</h1>
+                <div class="subtitle decrypt-text">Dimensional Nexus</div>
+                <p class="subtitle-cn decrypt-text">超越边界的智能跑团体验</p>
+                <p class="subtitle-en decrypt-text">Beyond Boundaries: AI-Driven Adventure Realms</p>
             </div>
             <nav class="steps-nav">
                 <div class="step-item" data-step="1">
@@ -64,5 +74,16 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script>
+        // 初始化文字解密效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const decryptedText = new DecryptedText();  // 使用默认参数
+
+            // 只为logo部分添加效果
+            document.querySelectorAll('.logo-section .decrypt-text').forEach(element => {
+                decryptedText.apply(element);
+            });
+        });
+    </script>
 </body>
 </html>
